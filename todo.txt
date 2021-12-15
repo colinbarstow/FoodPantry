@@ -1,0 +1,69 @@
+Rules
+
+Salt and Pepper are ingredients so when a user is recipe searching there must be a checkbox
+that is pre-checked (can be over-written in settings) which says include salt and pepper by default.
+
+There must be a rule that allows a user to allow recipes that contain ingredients they do not have.
+"Would you like to include recipes that require additional ingredients?".
+By default this will be unchecked however it can be over-written in settings.
+
+
+User Panel
+Area called pantry.
+This area allows people to update ingredients they already have at home.
+For example, a user can add plain flour, spices they have, coconut milk etc.
+
+Ability for pantry to self update must be included and a central focus.
+For example if a user says they have 4 eggs but they select a recipe that requires 3 eggs.
+Pantry will auto update to 1 egg.
+
+Syncing is very very important here BUT it needs to be optional and the control for this is absolute.
+If a user says they cooked a recipe when they didnt the pantry will still auto update.
+Possible to maybe look at manual action to update pantry?
+
+
+Settings
+include_salt_and_pepper_as_ingredients
+show_recipes_that_required_additional_ingredients
+
+
+Membership levels
+This is the backbone of the idea, the money-maker.
+There should be 3 levels of memebership.
+
+Basic
+Intermiediate
+advanced
+
+naming convetion to come.
+
+On a basic package a user can search recipes based on ingredients
+
+On an intermediate package a user has all basic functionality plus shopping list capability
+
+On a advanced package a user has all intermediate plus advanced.
+
+pricing is aimed to get all people to sign up as advanced users.
+
+paid for monthly, rolling contracts, quit anytime
+
+Basic - £2.99
+Intermidiate - £3.99
+Advanced - £5.99
+
+this needs serious thought.
+
+Shopping list generation needs to be complex in the sense a user can...
+Choose a budget friendly option
+High Quality option
+Medium option.
+
+
+So How does it all work.
+
+
+User
+UserPantry
+Ingredient
+UserPantry<->Ingredient (pivot with measurements ALWAYS METRIC and category)
+
